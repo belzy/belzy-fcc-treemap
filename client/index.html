@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title id='title'>Heat Map</title>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <link rel='stylesheet' type='text/css' href='./css/reset.css' />
+        <link rel='stylesheet' type='text/css' href='./css/index.css' />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <div id='svg-treemap-container' class='svg-treemap-container'>
+                <h1 class='main-heading'>Monthly Global Land-Surface Temperature</h1>
+                <h2 id='description' class='main-sub-heading'>1753 - 2015: base temperature 8.66℃</h2>
+                <svg id='svg-treemap'></svg>
+                <div id='tooltip' class='tooltip'>
+                   <h3 id='tooltip-date'></h3>
+                   <h3 id='tooltip-temperature'></h3>
+                   <h3 id='tooltip-variance'></h3>
+                </div>
+            </div>
+        </main> 
+
+        <script src='./js/main.js' type='text/javascript'></script>
+        <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js' type='text/javascript'></script>
+    </body>
+</html>
